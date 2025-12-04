@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>zsharpminor's personal website :3</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav class="navbar" id="navbar">
+            <div class="nav-container">
+                <a href="#home" class="nav-logo">sharp :3</a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">Coming Sooon!</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link">Coming Sooon!</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Coming Sooon!</a>
+                    </li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+        <section id="home" class="hero">
+            <div class="hero-container">
+                <h1 class="hero-title" data-animate="fade-in">
+                    Hi, I'm <span class="highlight">zsharpminor</span>! This is a personal website WIP :3
+                </h1>
+                <p class="hero-subtitle" data-animate="slide-up">
+                    I'm a passionate developer and tech enthusiast, with bases in hardware development, software engineering, and 3D modeling.
+                </p>
+                <p class="hero-description">
+                    Building cool stuff, both physically and digitally, is what I live for!!
+                </p>
+                <p class="hero-description">
+                    You probably want something to do instead of just sitting here, so go play this flight sim I spent the last 5 hours working on!! ;w;
+                </p>
+                <p class="hero-description">
+                    (scroll downn :p)
+                </p>
+            </div>
+        </section>
+        <section id="fsim" class="fsim">
+            <div id="fsim-container" style="width:100%; height:100%; position:relative;">
+                <div id="ui-layer">
+                    <div id="top-bar" class="hud-panel">
+                        <div class="lbl">HEADING</div>
+                        <div id="hud-hdg" class="val">000</div>
+                    </div>
+
+                    <div id="left-bar" class="hud-panel">
+                        <div class="lbl">THRUST</div>
+                        <div id="hud-thr" class="val">0%</div>
+                        <div class="lbl">AIRSPEED</div>
+                        <div id="hud-spd" class="val">0</div>
+                    </div>
+
+                    <div id="right-bar" class="hud-panel">
+                        <div class="lbl">ALTITUDE</div>
+                        <div id="hud-alt" class="val">0</div>
+                        <div class="lbl">V. SPEED</div>
+                        <div id="hud-vs" class="val">0</div>
+                    </div>
+
+                    <div id="controls">
+                        <span style="color:#0f0">FLIGHT CONTROLS</span><br>
+                        [ W / S ] Pitch<br>
+                        [ A / D ] Roll<br>
+                        [ Q / E ] Yaw<br>
+                        [ SHIFT ] Throttle +<br>
+                        [ SPACE ] Throttle -<br>
+                        [ V ] Reset Plane
+                    </div>
+                    
+                    <div id="alert-box" class="blink">OVAHSPEED WARNINGGGG!! SLOW DAWN!</div>
+                </div>
+
+                <div id="game-over">
+                    <h1>CWITICAL EWWORRRR :P</h1>
+                    <p style="font-size:24px">AIRCRAFT DESTROYED</p>
+                    <p class="blink" style="margin-top:30px; color:#0f0;">PWESS [ V ] TO WEWESTAWT ;W;</p>
+                </div>
+            </div>
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>
